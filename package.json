@@ -5,9 +5,9 @@
   "dependencies": {
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
+    "react-router-dom": "^6.3.0",
     "timecube": "^2.0.1"
   },
-
   "devDependencies": {
     "react-scripts": "5.0.0"
   },

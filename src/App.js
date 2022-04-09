@@ -4,10 +4,10 @@ import './App.css'
 const timecube = require('timecube')
 
 function App() {
-    let chunks = timecube.generateChunks(timecube.maxChunks, 0, timecube.maxChunks, true)
+    let chunks = timecube.generateChunks(timecube.maxChunks, 0, true)
 
     let first = chunks.shift()
-    chunks.unshift(chunks.splice(timecube.maxChunks -2, 1)[0])
+    chunks.unshift(chunks.pop())
 
     return (
         <div className="App" style = {{maxWidth: 500, margin: '0 auto', padding: "0 40px", textAlign: 'left'}}>
